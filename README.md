@@ -14,9 +14,9 @@ Luís Antônio - cliente
 Felipe Daniel
 
 # Descrição do Projeto: 
-Vai ser desenvolvido software de um site para uma barbearia
+Software para uma Barbearia
 
-Nome: Barbearia Estilo
+Nome da Barbearia: Barbearia Estilo
 
 Descrição do Projeto:
 O trabalho consiste no desenvolvimento de um modelo de sistema web para a Barbearia Estilo, com o objetivo de gerenciar o agendamento de cortes de cabelo e outros serviços oferecidos.
