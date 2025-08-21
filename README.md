@@ -7,7 +7,7 @@ O trabalho consiste no desenvolvimento de um modelo de sistema web para a Barbea
 com o objetivo de gerenciar o agendamento de cortes de cabelo e outros serviços oferecidos.
 As funcionalidades previstas incluem:
 
-#FUNCIONAL
+# Requisitos Funcionais
 1-Cadastro de serviços: permite registrar todos os tipos de serviços oferecidos, como cortes, barbas e tratamentos, possibilitando que os clientes escolham facilmente o que desejam. 
 
 2-Cadastro de clientes: mantém um registro detalhado de cada cliente, incluindo histórico de serviços, dados de contato e preferências.
@@ -25,3 +25,16 @@ As funcionalidades previstas incluem:
 8-Relatórios de funcionários: possibilita acompanhar desempenho, horários e produtividade dos barbeiros.
 
 9-Sistema de fidelidade: mantém um programa de pontos ou recompensas para incentivar a fidelidade dos clientes e aumentar a retenção.
+
+# Requisitos Não Funcionais 
+
+1-Usabilidade – o sistema deve ser fácil de usar e intuitivo, tanto para clientes quanto para funcionários.
+
+2-Segurança – proteção dos dados dos clientes, funcionários e transações.
+
+3-Desempenho – respostas rápidas ao acessar cadastros, agendamentos e relatórios.
+
+4-Confiabilidade – o sistema deve funcionar corretamente, sem perda de informações.
+
+5-Manutenibilidade – facilidade para futuras atualizações ou correções.
+
