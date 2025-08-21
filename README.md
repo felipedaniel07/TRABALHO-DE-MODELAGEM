@@ -48,7 +48,7 @@ As funcionalidades previstas incluem:
 
 2-Segurança – Proteção de dados de clientes, funcionários e transações.
 
-3-Desempenho – respostas rápidas ao acessar cadastros, agendamentos e relatórios.
+3-Desempenho – O sistema deve responder rapidamente ao acessar cadastros, agendamentos, promoções e propagandas.
 
 4-Confiabilidade – O sistema deve simular corretamente as funções, sem perda de informações.
 
