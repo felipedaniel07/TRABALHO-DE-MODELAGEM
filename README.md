@@ -4,6 +4,7 @@ Vai ser desenvolvido software de um site para uma barbearia
 Nome: Barbearia Estilo
 
 Descrição do Projeto 
+
 O trabalho consiste no desenvolvimento de um modelo de sistema web para a Barbearia Estilo,
 com o objetivo de gerenciar o agendamento de cortes de cabelo e outros serviços oferecidos.
 As funcionalidades previstas incluem:
