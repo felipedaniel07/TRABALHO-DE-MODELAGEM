@@ -36,7 +36,19 @@ As funcionalidades previstas incluem:
 
 3-Desempenho – respostas rápidas ao acessar cadastros, agendamentos e relatórios.
 
-4-Confiabilidade – o sistema deve funcionar corretamente, sem perda de informações.
+4-Confiabilidade – O sistema deve simular corretamente o funcionamento das funções, sem perder informações.
 
-5-Manutenibilidade – facilidade para futuras atualizações ou correções.
+5-Manutenibilidade – O projeto deve ser fácil de atualizar ou corrigir erros, caso você queira expandir o trabalho.
+
+6-Portabilidade - O modelo do sistema deve ser flexível para ser utilizado em diferentes plataformas (desktop, tablet, celular) se fosse implementado.
+
+7-Escabilidade - O sistema deve poder lidar com aumento de clientes, barbeiros ou serviços no futuro.
+
+8-Integridade de dados - Garantir que cadastros, agendamentos e históricos sejam consistentes, sem duplicidades ou erros.
+
+9-Autoditabilidade - Possibilidade de registrar ações, como criação ou cancelamento de agendamento, para acompanhar histórico de uso.
+
+10-Responsividade  - Interface adaptável a diferentes tamanhos de tela, mesmo que apenas ilustrado no modelo.
+
+11-Compatibilidade - O modelo deve permitir futuras integrações (pagamentos, CRM, etc.) caso fosse implementado.
 
