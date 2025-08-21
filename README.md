@@ -7,7 +7,8 @@ O trabalho consiste no desenvolvimento de um modelo de sistema web para a Barbea
 com o objetivo de gerenciar o agendamento de cortes de cabelo e outros serviços oferecidos.
 As funcionalidades previstas incluem:
 
-1-Cadastro de serviços: permite registrar todos os tipos de serviços oferecidos, como cortes, barbas e tratamentos, possibilitando que os clientes escolham facilmente o que desejam.
+#FUNCIONAL
+1-Cadastro de serviços: permite registrar todos os tipos de serviços oferecidos, como cortes, barbas e tratamentos, possibilitando que os clientes escolham facilmente o que desejam. 
 
 2-Cadastro de clientes: mantém um registro detalhado de cada cliente, incluindo histórico de serviços, dados de contato e preferências.
 
