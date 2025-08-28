@@ -42,6 +42,10 @@ As funcionalidades previstas incluem:
 
 9-Sistema de fidelidade: mantém um programa de pontos ou recompensas para incentivar a fidelidade dos clientes e aumentar a retenção.
 
+10-Integridade de dados - Garantir que cadastros, agendamentos e históricos sejam consistentes, sem duplicidades ou erros.
+
+11-Auditabilidade - Registrar ações como criação ou cancelamento de agendamento para acompanhar histórico.
+
 # Requisitos Não Funcionais 
 
 1-Usabilidade – o sistema deve ser fácil de usar e intuitivo, tanto para clientes quanto para funcionários.
@@ -58,11 +62,7 @@ As funcionalidades previstas incluem:
 
 7-Escalabilidade - O sistema deve suportar aumento de clientes, barbeiros ou serviços no futuro.
 
-8-Integridade de dados - Garantir que cadastros, agendamentos e históricos sejam consistentes, sem duplicidades ou erros.
+8-Responsividade  - Interface adaptável a diferentes tamanhos de tela, mesmo que apenas ilustrado no modelo.
 
-9-Auditabilidade - Registrar ações como criação ou cancelamento de agendamento para acompanhar histórico.
-
-10-Responsividade  - Interface adaptável a diferentes tamanhos de tela, mesmo que apenas ilustrado no modelo.
-
-11-Compatibilidade - O modelo deve permitir futuras integrações com outros sistemas (pagamentos, NFC etc.).
+9-Compatibilidade - O modelo deve permitir futuras integrações com outros sistemas (pagamentos, NFC etc.).
 
