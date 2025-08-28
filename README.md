@@ -64,5 +64,5 @@ As funcionalidades previstas incluem:
 
 10-Responsividade  - Interface adaptável a diferentes tamanhos de tela, mesmo que apenas ilustrado no modelo.
 
-11-Compatibilidade - O modelo deve permitir futuras integrações com outros sistemas (pagamentos, CRM etc.).
+11-Compatibilidade - O modelo deve permitir futuras integrações com outros sistemas (pagamentos, NFC etc.).
 
