@@ -13,6 +13,8 @@ Luís Antônio - cliente
 
 Felipe Daniel
 
+Daniel Luccas
+
 # Descrição do Projeto: 
 Software para uma Barbearia
 
