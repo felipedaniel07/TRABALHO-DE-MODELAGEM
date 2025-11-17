@@ -9,11 +9,11 @@ Pedro Clemente
 
 Mateus Carvalho
 
-Luís Antônio - cliente
-
 Felipe Daniel
 
 Daniel Luccas
+
+David
 
 # Descrição do Projeto: 
 Software para uma Barbearia
