@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Estilo - Agendamento Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="B.png" alt="Logo Barbearia Estilo" class="logo-image">
+                <h1>Barbearia Estilo</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#barbeiros">Profissionais</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+                <li><a href="#meus-agendamentos" onclick="checkAuthAndOpenViewModal()">Meus Agendamentos</a></li>
+                <li id="auth-buttons">
+                    <button class="login-btn" onclick="openLoginModal()">Entrar</button>
+                    <button class="register-btn" onclick="openRegisterModal()">Cadastrar</button>
+                </li>
+                <li id="user-profile" style="display: none;">
+                    <span id="user-name" class="user-name"></span>
+                    <button class="logout-btn" onclick="logout()">Sair</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="R.jfif" alt="Barbearia Estilo" class="hero-image">
+            </div>
+            <div class="hero-content">
+                <h2>Seu estilo, nosso compromisso</h2>
+                <p>Agende seu horário online e garanta o melhor atendimento</p>
+                <button class="cta-button" onclick="scrollToSection('agendar')">Agendar Agora</button>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Corte Tradicional</h3>
+                    <p>Corte clássico com toalha quente e finalização</p>
+                    <span class="price">R$ 35</span>
+                </div>
+                <div class="service-card">
+                    <h3>Degradê</h3>
+                    <p>Corte moderno com degradê nas laterais</p>
+                    <span class="price">R$ 40</span>
+                </div>
+                <div class="service-card">
+                    <h3>Barba</h3>
+                    <p>Barba completa com navalha e toalha quente</p>
+                    <span class="price">R$ 30</span>
+                </div>
+                <div class="service-card">
+                    <h3>Combo Completo</h3>
+                    <p>Corte + barba + sobrancelha</p>
+                    <span class="price">R$ 70</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="barbeiros" class="barbers">
+            <h2>Nossos Profissionais</h2>
+            <div class="barbers-grid">
+                <div class="barber-card">
+                    <img src="barbeiro 1.JPG" alt="João">
+                    <h3>João Silva</h3>
+                    <p>Especialista em cortes clássicos</p>
+                    <span class="rating">⭐ 4.9</span>
+                </div>
+                <div class="barber-card">
+                    <img src="barbeiro 2.jpg" alt="Pedro">
+                    <h3>Pedro Santos</h3>
+                    <p>Expert em degradê e estilos modernos</p>
+                    <span class="rating">⭐ 4.8</span>
+                </div>
+                <div class="barber-card">
+                    <img src="barbeiro 3.jpg" alt="Carlos">
+                    <h3>Carlos Oliveira</h3>
+                    <p>Barba e cortes premium</p>
+                    <span class="rating">⭐ 5.0</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="agendar" class="booking">
+            <h2>Agende seu Horário</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="barber">Escolha seu Profissional:</label>
+                    <select id="barber" name="barber" required>
+                        <option value="">Selecione um profissional</option>
+                        <option value="João Silva">João Silva - Cortes Clássicos</option>
+                        <option value="Pedro Santos">Pedro Santos - Degradê & Modernos</option>
+                        <option value="Carlos Oliveira">Carlos Oliveira - Barba & Premium</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Tipo de Serviço:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Corte Tradicional">Corte Tradicional - R$ 35</option>
+                        <option value="Degradê">Degradê - R$ 40</option>
+                        <option value="Barba">Barba - R$ 30</option>
+                        <option value="Combo Completo">Combo Completo - R$ 70</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Horário:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Selecione um horário</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Observações (opcional):</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Confirmar Agendamento</button>
+            </form>
+        </section>
+
+        <section id="meus-agendamentos" class="my-appointments">
+            <h2>Meus Agendamentos</h2>
+            
+            <div id="logged-in-view" style="display: none;">
+                <p>Seus agendamentos serão exibidos automaticamente quando você estiver logado.</p>
+                <button onclick="searchAppointmentsMain()" class="search-btn">Ver Meus Agendamentos</button>
+            </div>
+            
+            <div id="logged-out-view">
+                <p>Digite seu número de telefone para visualizar seus agendamentos:</p>
+                <div class="search-section">
+                    <input type="tel" id="search-phone-main" placeholder="(00) 00000-0000" maxlength="15">
+                    <button onclick="searchAppointmentsMain()" class="search-btn">Buscar</button>
+                </div>
+            </div>
+
+            <div id="main-appointments-list" class="appointments-container">
+                <p class="instructions">Digite seu telefone acima para ver seus agendamentos.</p>
+            </div>
+        </section>
+    </main>
+
+       <footer>
+        <p>&copy; 2024 Barbearia Estilo. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agendamento Confirmado!</h2>
+            <p>Seu horário foi agendado com sucesso.</p>
+            <div id="booking-details"></div>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <div id="appointment-info-modal" class="modal">
+        <div class="modal-content appointment-info-content">
+            <span class="close" onclick="closeAppointmentInfoModal()">&times;</span>
+            <h2>Seus Agendamentos</h2>
+            <div id="appointment-info-details"></div>
+            <button onclick="closeAppointmentInfoModal()" class="close-btn">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Entrar na Conta</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Senha:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="button" onclick="togglePasswordVisibility('login-password')">Mostrar</button>
+                </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Lembrar-me</label>
+                </div>
+                <button type="submit" class="submit-button">Entrar</button>
+            </form>
+            <p class="auth-switch">
+                Não tem uma conta? <a href="#" onclick="switchToRegister()">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Criar Conta</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Nome Completo:</label>
+                    <input type="text" id="register-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone">Telefone:</label>
+                    <input type="tel" id="register-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Senha:</label>
+                    <input type="password" id="register-password" name="password" required minlength="6">
+                    <button type="button" onclick="togglePasswordVisibility('register-password')">Mostrar</button>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirmar Senha:</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" required>
+                    <button type="button" onclick="togglePasswordVisibility('register-confirm-password')">Mostrar</button>
+                </div>
+                <button type="submit" class="submit-button">Criar Conta</button>
+            </form>
+            <p class="auth-switch">
+                Já tem uma conta? <a href="#" onclick="switchToLogin()">Entrar</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
